@@ -30,6 +30,7 @@ jobs:
           name: pishi-normalno-skill
           path: |
             dist/pishi-normalno.zip
+            dist/pishi-normalno-chatgpt.md
             dist/checksums.txt
             dist/pishi-normalno.manifest.json
 
@@ -63,8 +64,13 @@ jobs:
         if: runner.os != 'Windows'
         run: |
           bash -n install.sh
+          ./install.sh --target codex --dry-run
+          ./install.sh --target claude --dry-run
           ./install.sh --target agents --dry-run
       - name: PowerShell dry run
         if: runner.os == 'Windows'
         shell: pwsh
-        run: ./install.ps1 -Target agents -DryRun
+        run: |
+          ./install.ps1 -Target codex -DryRun
+          ./install.ps1 -Target claude -DryRun
+          ./install.ps1 -Target agents -DryRun

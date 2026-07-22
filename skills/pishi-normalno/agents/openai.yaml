@@ -1,6 +1,9 @@
 interface:
   display_name: "Пиши нормально"
   short_description: "Пишет и редактирует живые русские тексты"
+  icon_small: "./assets/mark.svg"
+  icon_large: "./assets/mark.svg"
+  brand_color: "#F15A3A"
   default_prompt: "Используй $pishi-normalno, чтобы написать или отредактировать русский текст с сохранением фактов, смысловых связей и авторского голоса."
 
 policy:

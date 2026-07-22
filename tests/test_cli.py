@@ -6,6 +6,7 @@ import tempfile
 import unittest
 from contextlib import redirect_stderr, redirect_stdout
 from pathlib import Path
+from unittest.mock import patch
 
 sys.dont_write_bytecode = True
 
@@ -42,6 +43,18 @@ class CliTests(unittest.TestCase):
             status = cli.main(["where"])
         self.assertEqual(status, 0)
         self.assertEqual(Path(output.getvalue().strip()), cli.SKILL_DIR)
+
+    def test_official_global_skill_paths(self) -> None:
+        home = Path("/example/home")
+        with patch.object(Path, "home", return_value=home):
+            self.assertEqual(
+                cli._target_path("codex", None),
+                home / ".agents" / "skills" / "pishi-normalno",
+            )
+            self.assertEqual(
+                cli._target_path("claude", None),
+                home / ".claude" / "skills" / "pishi-normalno",
+            )
 
     def test_install_to_custom_path(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:

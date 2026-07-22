@@ -59,7 +59,7 @@ run_install() {
   if [[ $dry_run -eq 1 ]]; then
     args+=(--dry-run)
   fi
-  "$python_cmd" "${args[@]}"
+  PYTHONUTF8=1 PYTHONDONTWRITEBYTECODE=1 "$python_cmd" "${args[@]}"
 }
 
 script_dir=""

@@ -1,5 +1,6 @@
 include LICENSE
+include INSTALL.md
 include README.md
 include README.en.md
 include THIRD_PARTY_NOTICES.md
-recursive-include skills/pishi-normalno *.md *.json *.py *.yaml py.typed
+recursive-include skills/pishi-normalno *.md *.json *.py *.svg *.yaml py.typed

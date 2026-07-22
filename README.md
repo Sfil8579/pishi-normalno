@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/hero.svg" alt="Пиши нормально. Русский редактор для AI-агентов" width="100%">
+  <img src="assets/hero.png" alt="Пиши нормально. Русский редактор для AI-агентов" width="100%">
 </div>
 
 <div align="center">
@@ -42,7 +42,18 @@
 
 Внутри находятся 33 составных редакторских паттерна, 21 машиночитаемая группа правил и детерминированный source-aware аудитор.
 
-## Быстрая установка
+## Установка
+
+Выберите свою программу. Все ссылки ведут на готовые файлы релиза.
+
+| Программа | Самый простой способ |
+|---|---|
+| Claude в браузере | Скачать ZIP, открыть `Customize > Skills`, загрузить ZIP |
+| Claude Desktop | Скачать ZIP, открыть `Customize > Skills`, загрузить ZIP |
+| Claude Code | Запустить одну команду для папки `~/.claude/skills` |
+| ChatGPT с Workspace Agents | Скачать ZIP и нажать `Add skill` |
+| Обычный ChatGPT | Добавить один готовый MD-файл в Project |
+| Codex app, CLI или IDE | Запустить одну команду для папки `~/.agents/skills` |
 
 ### Codex на Windows
 
@@ -50,36 +61,29 @@
 irm https://raw.githubusercontent.com/fsbtactic-code/pishi-normalno/v1.0.0/install.ps1 | iex
 ```
 
-### Codex, Claude Code или общий каталог Agent Skills на macOS и Linux
+### Codex на macOS или Linux
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/fsbtactic-code/pishi-normalno/v1.0.0/install.sh | bash
 ```
 
-По умолчанию скилл устанавливается в Codex. Другие цели:
+### Claude Code на Windows
 
 ```powershell
-./install.ps1 -Target claude
-./install.ps1 -Target agents
+& ([scriptblock]::Create((irm https://raw.githubusercontent.com/fsbtactic-code/pishi-normalno/v1.0.0/install.ps1))) -Target claude
 ```
 
+### Claude Code на macOS или Linux
+
 ```bash
-./install.sh --target claude
-./install.sh --target agents
+curl -fsSL https://raw.githubusercontent.com/fsbtactic-code/pishi-normalno/v1.0.0/install.sh | bash -s -- --target claude
 ```
+
+Для Claude, Claude Desktop и ChatGPT используется готовый [ZIP-пакет релиза](https://github.com/fsbtactic-code/pishi-normalno/releases/download/v1.0.0/pishi-normalno.zip). Для обычного ChatGPT без Workspace Agents подготовлен [единый MD-файл](https://github.com/fsbtactic-code/pishi-normalno/releases/download/v1.0.0/pishi-normalno-chatgpt.md).
+
+Полная пошаговая инструкция с проверкой установки и обновлением: **[INSTALL.md](INSTALL.md)**.
 
 Инсталляторы привязаны к релизу, проверяют SHA256, не перезаписывают существующую установку без флага обновления и сохраняют резервную копию предыдущей версии.
-
-### Установка из клона
-
-```bash
-git clone https://github.com/fsbtactic-code/pishi-normalno.git
-cd pishi-normalno
-python -m pip install .
-pishi-normalno install --target codex
-```
-
-После установки перезапустите агент, чтобы он перечитал каталог скиллов.
 
 ## Автоматический вызов
 
@@ -168,7 +172,7 @@ pishi-normalno where
 | Ритм | Меняется только по смыслу и голосу | Используются perplexity, burstiness и контрастные замены |
 | AI-детекторы | Не оптимизируется и не обещает обход | Детекторные признаки являются частью заявленной цели |
 | Автоматический вызов | OpenAI metadata и переносимый AGENTS-шаблон | Зависит от способа установки и клиента |
-| Публичная зрелость | Новый проект, 78 автоматических тестов в первом релизе | Более зрелый проект, 54 паттерна, релизы и публичная история |
+| Публичная зрелость | Новый проект, 80 автоматических тестов в первом релизе | Более зрелый проект, 54 паттерна, релизы и публичная история |
 
 Мы сознательно не переносили намеренные ошибки, квоты на сленг, метафоры и длину фраз, обязательную замену предсказуемых слов и произвольный процент человечности. Такие приемы могут менять статистический рисунок, но не гарантируют естественную русскую речь.
 
@@ -205,7 +209,7 @@ ruff check .
 mypy skills/pishi-normalno/scripts tools tests
 ```
 
-CI проверяет Python 3.10, 3.12 и 3.13 на Ubuntu и Windows, переносимость скилла, запрещенные кодовые точки, локальные пути, CLI, установку и детерминированность release-архива. В первом релизе проходят 78 автоматических тестов.
+CI проверяет Python 3.10, 3.12 и 3.13 на Ubuntu и Windows, переносимость скилла, запрещенные кодовые точки, локальные пути, CLI, установку и детерминированность release-архива. В первом релизе проходят 80 автоматических тестов.
 
 ## Приватность
 

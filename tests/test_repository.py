@@ -39,8 +39,19 @@ class RepositoryTests(unittest.TestCase):
         package_skill.build()
         manifest = json.loads(package_skill.MANIFEST.read_text(encoding="utf-8"))
         actual = hashlib.sha256(package_skill.ARCHIVE.read_bytes()).hexdigest()
+        chatgpt_actual = hashlib.sha256(package_skill.CHATGPT_BUNDLE.read_bytes()).hexdigest()
         self.assertEqual(manifest["archive_sha256"], actual)
+        self.assertEqual(manifest["chatgpt_bundle_sha256"], chatgpt_actual)
         self.assertEqual(manifest["schema"], "pishi-normalno.release.v1")
+
+    def test_chatgpt_bundle_contains_full_editorial_system(self) -> None:
+        package_skill.build()
+        text = package_skill.CHATGPT_BUNDLE.read_text(encoding="utf-8")
+        self.assertIn("# Основные инструкции", text)
+        for reference in (package_skill.SKILL / "references").glob("*.md"):
+            self.assertIn(f"# Дополнение: {reference.name}", text)
+        forbidden = {0x2013, 0x2014, 0x0401, 0x0451}
+        self.assertFalse(any(ord(char) in forbidden for char in text))
 
 
 if __name__ == "__main__":

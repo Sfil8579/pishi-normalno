@@ -5,7 +5,6 @@ from __future__ import annotations
 
 import argparse
 import io
-import os
 import shutil
 import sys
 import tempfile
@@ -46,8 +45,7 @@ def _target_path(target: str, custom: str | None) -> Path:
     if custom:
         return Path(custom).expanduser().resolve()
     if target == "codex":
-        codex_home = Path(os.environ.get("CODEX_HOME", Path.home() / ".codex"))
-        return codex_home / "skills" / SKILL_NAME
+        return Path.home() / ".agents" / "skills" / SKILL_NAME
     if target == "claude":
         return Path.home() / ".claude" / "skills" / SKILL_NAME
     if target == "agents":

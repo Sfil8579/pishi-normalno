@@ -393,16 +393,20 @@ class AuditRussianTextTests(unittest.TestCase):
     def test_agent_metadata_allows_implicit_invocation(self) -> None:
         metadata = (SKILL_DIR / "agents" / "openai.yaml").read_text(encoding="utf-8")
         self.assertIn("allow_implicit_invocation: true", metadata)
+        self.assertIn('icon_small: "./assets/mark.svg"', metadata)
+        self.assertTrue((SKILL_DIR / "assets" / "mark.svg").is_file())
 
     def test_skill_trigger_covers_creation_editing_and_embedded_use(self) -> None:
         skill_text = (SKILL_DIR / "SKILL.md").read_text(encoding="utf-8")
         frontmatter = skill_text.split("---", 2)[1].lower()
+        description = frontmatter.split("description:", 1)[1].strip()
+        self.assertLessEqual(len(description), 200)
         for phrase in (
             "пишет",
             "редактирует",
-            "постов",
+            "посты",
             "smm",
-            "маркетинга",
+            "маркетинг",
             "финальный embedded-проход",
         ):
             with self.subTest(phrase=phrase):
@@ -410,7 +414,7 @@ class AuditRussianTextTests(unittest.TestCase):
 
     def test_skill_trigger_declares_near_miss_exclusions(self) -> None:
         skill_text = (SKILL_DIR / "SKILL.md").read_text(encoding="utf-8")
-        frontmatter = skill_text.split("---", 2)[1].lower()
+        body = skill_text.split("---", 2)[2].lower()
         for phrase in (
             "кода",
             "команд",
@@ -420,7 +424,7 @@ class AuditRussianTextTests(unittest.TestCase):
             "только к пользовательской прозе",
         ):
             with self.subTest(phrase=phrase):
-                self.assertIn(phrase, frontmatter)
+                self.assertIn(phrase, body)
 
     def test_agent_contract_routes_to_skill_and_auditor(self) -> None:
         template = REPO_DIR / "templates" / "AGENTS.md"

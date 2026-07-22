@@ -56,6 +56,7 @@ Changelog = "https://github.com/fsbtactic-code/pishi-normalno/blob/main/CHANGELO
 packages = [
   "pishi_normalno",
   "pishi_normalno.agents",
+  "pishi_normalno.assets",
   "pishi_normalno.references",
   "pishi_normalno.scripts",
 ]
@@ -67,6 +68,7 @@ pishi_normalno = [
   "SKILL.md",
   "py.typed",
   "agents/*.yaml",
+  "assets/*.svg",
   "references/*.json",
   "references/*.md",
 ]
