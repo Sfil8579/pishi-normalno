@@ -27,7 +27,7 @@ The skill restores the missing predication instead of replacing punctuation mech
 - Dedicated marketing, SMM, Telegram, Threads, landing page, case study, CTA, and product-copy guidance.
 - Automatic invocation metadata for compatible clients.
 - Deterministic local CLI with JSON output and no telemetry.
-- 33 composite editorial patterns, 21 machine-readable rule groups, and 77 automated tests at the initial release.
+- 33 composite editorial patterns, 21 machine-readable rule groups, and 78 automated tests at the initial release.
 
 ## Install
 

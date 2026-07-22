@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import io
 import os
 import shutil
 import sys
@@ -26,6 +27,15 @@ except ImportError:
 
 SKILL_DIR = Path(__file__).resolve().parent.parent
 SKILL_NAME = "pishi-normalno"
+
+
+def _configure_utf8_streams() -> None:
+    """Keep Russian input and output stable on Windows and redirected consoles."""
+    if isinstance(sys.stdin, io.TextIOWrapper):
+        sys.stdin.reconfigure(encoding="utf-8", errors="replace")
+    for stream in (sys.stdout, sys.stderr):
+        if isinstance(stream, io.TextIOWrapper):
+            stream.reconfigure(encoding="utf-8", errors="backslashreplace")
 
 
 def _target_path(target: str, custom: str | None) -> Path:
@@ -193,6 +203,7 @@ def _build_parser() -> argparse.ArgumentParser:
 
 
 def main(argv: Sequence[str] | None = None) -> int:
+    _configure_utf8_streams()
     arguments = list(sys.argv[1:] if argv is None else argv)
     known_commands = {"audit", "doctor", "where", "install", "-h", "--help", "--version"}
     if arguments and arguments[0] not in known_commands:

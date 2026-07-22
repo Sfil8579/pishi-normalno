@@ -25,6 +25,17 @@ class CliTests(unittest.TestCase):
         self.assertEqual(status, 0)
         self.assertIn("Аудитор и каталог правил работают", output.getvalue())
 
+    def test_doctor_reconfigures_legacy_console_to_utf8(self) -> None:
+        buffer = io.BytesIO()
+        output = io.TextIOWrapper(buffer, encoding="cp1252")
+        with redirect_stdout(output):
+            status = cli.main(["doctor"])
+            output.flush()
+        rendered = buffer.getvalue().decode("utf-8")
+        output.detach()
+        self.assertEqual(status, 0)
+        self.assertIn("Аудитор и каталог правил работают", rendered)
+
     def test_where(self) -> None:
         output = io.StringIO()
         with redirect_stdout(output):

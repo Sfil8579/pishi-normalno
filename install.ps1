@@ -32,6 +32,9 @@ function Invoke-SkillInstall {
     param([string]$SkillDir)
 
     $PythonCommand = Get-PythonCommand
+    $env:PYTHONUTF8 = "1"
+    $env:PYTHONIOENCODING = "utf-8"
+    $env:PYTHONDONTWRITEBYTECODE = "1"
     $Arguments = @("$SkillDir\scripts\cli.py", "install", "--target", $Target)
     if ($Update) {
         $Arguments += "--update"
