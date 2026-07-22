@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Если проект помог вашей работе, укажите этот репозиторий."
+title: "Пиши нормально"
+type: software
+authors:
+  - name: "fsbtactic-code"
+repository-code: "https://github.com/fsbtactic-code/pishi-normalno"
+url: "https://github.com/fsbtactic-code/pishi-normalno"
+license: MIT
+version: 1.0.0
+date-released: 2026-07-22

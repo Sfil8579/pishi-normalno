@@ -1,0 +1,48 @@
+name: Новый паттерн или ложное срабатывание
+description: Предложить правило или показать контрпример
+title: "[Pattern] "
+labels: [pattern]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Версия или commit
+    validations:
+      required: true
+  - type: input
+    id: genre
+    attributes:
+      label: Жанр и канал
+      placeholder: Telegram, маркетинг, письмо, технический текст
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Исходник
+      description: Обезличьте текст или подтвердите разрешение на публикацию.
+  - type: textarea
+    id: result
+    attributes:
+      label: Результат и finding code
+    validations:
+      required: true
+  - type: textarea
+    id: better
+    attributes:
+      label: Как должно быть
+    validations:
+      required: true
+  - type: textarea
+    id: counterexamples
+    attributes:
+      label: Контрпримеры
+      description: Добавьте случаи, которые новое правило не должно ломать.
+    validations:
+      required: true
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Публикация
+      options:
+        - label: Этот пример можно хранить в публичном регрессионном корпусе.

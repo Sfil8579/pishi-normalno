@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Пиши нормально</title>
+  <desc id="desc">Русский редактор для AI-агентов</desc>
+  <rect width="1200" height="630" rx="36" fill="#171717"/>
+  <circle cx="1080" cy="90" r="180" fill="#f15a3a" opacity="0.94"/>
+  <circle cx="1110" cy="560" r="240" fill="#c8ff66" opacity="0.88"/>
+  <rect x="70" y="64" width="86" height="86" rx="20" fill="#f15a3a"/>
+  <text x="113" y="122" text-anchor="middle" font-family="Arial, sans-serif" font-size="40" font-weight="800" fill="#f7f1e8">ПН</text>
+  <text x="70" y="260" font-family="Arial, sans-serif" font-size="104" font-weight="900" letter-spacing="-3" fill="#f7f1e8">ПИШИ</text>
+  <text x="70" y="368" font-family="Arial, sans-serif" font-size="104" font-weight="900" letter-spacing="-3" fill="#f7f1e8">НОРМАЛЬНО</text>
+  <text x="76" y="430" font-family="Arial, sans-serif" font-size="28" font-weight="500" fill="#bdb8af">Русский редактор для AI-агентов</text>
+  <rect x="70" y="500" width="160" height="52" rx="26" fill="#292929"/>
+  <rect x="246" y="500" width="160" height="52" rx="26" fill="#292929"/>
+  <rect x="422" y="500" width="160" height="52" rx="26" fill="#292929"/>
+  <text x="150" y="534" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#c8ff66">СМЫСЛ</text>
+  <text x="326" y="534" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#c8ff66">ГОЛОС</text>
+  <text x="502" y="534" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#c8ff66">ФАКТЫ</text>
+  <rect x="824" y="190" width="276" height="198" rx="28" fill="#f7f1e8"/>
+  <rect x="858" y="230" width="188" height="14" rx="7" fill="#171717"/>
+  <rect x="858" y="270" width="208" height="14" rx="7" fill="#171717" opacity="0.72"/>
+  <rect x="858" y="310" width="154" height="14" rx="7" fill="#f15a3a"/>
+  <rect x="858" y="350" width="94" height="14" rx="7" fill="#171717" opacity="0.38"/>
+</svg>

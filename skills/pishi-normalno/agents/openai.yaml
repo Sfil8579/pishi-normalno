@@ -1,0 +1,7 @@
+interface:
+  display_name: "Пиши нормально"
+  short_description: "Пишет и редактирует живые русские тексты"
+  default_prompt: "Используй $pishi-normalno, чтобы написать или отредактировать русский текст с сохранением фактов, смысловых связей и авторского голоса."
+
+policy:
+  allow_implicit_invocation: true

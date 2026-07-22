@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">Пиши нормально</title>
+  <desc id="desc">Красный квадрат с буквами ПН</desc>
+  <rect width="160" height="160" rx="32" fill="#f15a3a"/>
+  <rect x="18" y="18" width="124" height="124" rx="22" fill="#171717"/>
+  <text x="80" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="62" font-weight="800" fill="#f7f1e8">ПН</text>
+</svg>

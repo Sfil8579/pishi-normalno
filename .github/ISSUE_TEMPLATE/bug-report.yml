@@ -1,0 +1,53 @@
+name: Ошибка
+description: Сообщить о воспроизводимой ошибке скилла, CLI или установщика
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Версия или commit
+    validations:
+      required: true
+  - type: dropdown
+    id: client
+    attributes:
+      label: Клиент
+      options:
+        - Codex
+        - Claude Code
+        - Agent Skills
+        - CLI
+        - Другой
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: Платформа и Python
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Как воспроизвести
+      description: Удалите приватные данные, токены и закрытые тексты.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Ожидаемое поведение
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Фактическое поведение
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Приватность
+      options:
+        - label: Я удалил персональные данные, секреты и закрытую фактуру.
+          required: true

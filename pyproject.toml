@@ -1,0 +1,88 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pishi-normalno"
+version = "1.0.0"
+description = "Russian-first writing and editing skill for AI agents"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "fsbtactic-code" }]
+keywords = [
+  "agent-skills",
+  "ai-agents",
+  "copywriting",
+  "humanizer",
+  "russian",
+  "smm",
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Natural Language :: Russian",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Text Processing :: Linguistic",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+  "build>=1.2.2",
+  "mypy>=1.15",
+  "ruff>=0.11",
+]
+morphology = [
+  "pymorphy3>=2.0.3",
+  "razdel>=0.5.0",
+]
+
+[project.scripts]
+pishi-normalno = "pishi_normalno.scripts.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/fsbtactic-code/pishi-normalno"
+Documentation = "https://github.com/fsbtactic-code/pishi-normalno#readme"
+Issues = "https://github.com/fsbtactic-code/pishi-normalno/issues"
+Changelog = "https://github.com/fsbtactic-code/pishi-normalno/blob/main/CHANGELOG.md"
+
+[tool.setuptools]
+packages = [
+  "pishi_normalno",
+  "pishi_normalno.agents",
+  "pishi_normalno.references",
+  "pishi_normalno.scripts",
+]
+package-dir = { pishi_normalno = "skills/pishi-normalno" }
+include-package-data = true
+
+[tool.setuptools.package-data]
+pishi_normalno = [
+  "SKILL.md",
+  "py.typed",
+  "agents/*.yaml",
+  "references/*.json",
+  "references/*.md",
+]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["B", "E", "F", "I", "SIM", "UP"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*.py" = ["E402"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+warn_unused_configs = true
+exclude = ["build", "dist"]
