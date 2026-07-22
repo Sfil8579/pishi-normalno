@@ -14,6 +14,8 @@
 
 **Пиши нормально** помогает AI-агентам писать и редактировать по-русски без машинной манеры. Скилл сохраняет факты, смысловые связи и голос автора, убирает нейрослоп, канцелярит, кальки, декоративную пунктуацию и шаблонный маркетинг.
 
+**[Скачать готовый pishi-normalno.zip](https://github.com/fsbtactic-code/pishi-normalno/releases/download/v1.0.0/pishi-normalno.zip)**
+
 Он не имитирует человека ошибками и не оптимизирует текст под AI-детекторы. Его задача проще и сложнее одновременно: получить хороший русский текст.
 
 ## Одна фраза, в которой видна разница
@@ -48,11 +50,11 @@
 
 | Программа | Самый простой способ |
 |---|---|
-| Claude в браузере | Скачать ZIP, открыть `Customize > Skills`, загрузить ZIP |
-| Claude Desktop | Скачать ZIP, открыть `Customize > Skills`, загрузить ZIP |
+| Claude в браузере | **[Скачать ZIP](https://github.com/fsbtactic-code/pishi-normalno/releases/download/v1.0.0/pishi-normalno.zip)**, открыть `Customize > Skills`, загрузить скачанный файл |
+| Claude Desktop | **[Скачать ZIP](https://github.com/fsbtactic-code/pishi-normalno/releases/download/v1.0.0/pishi-normalno.zip)**, открыть `Customize > Skills`, загрузить скачанный файл |
 | Claude Code | Запустить одну команду для папки `~/.claude/skills` |
-| ChatGPT с Workspace Agents | Скачать ZIP и нажать `Add skill` |
-| Обычный ChatGPT | Добавить один готовый MD-файл в Project |
+| ChatGPT с Workspace Agents | **[Скачать ZIP](https://github.com/fsbtactic-code/pishi-normalno/releases/download/v1.0.0/pishi-normalno.zip)** и нажать `Add skill` |
+| Обычный ChatGPT | **[Скачать MD](https://github.com/fsbtactic-code/pishi-normalno/releases/download/v1.0.0/pishi-normalno-chatgpt.md)** и добавить его в Project |
 | Codex app, CLI или IDE | Запустить одну команду для папки `~/.agents/skills` |
 
 ### Codex на Windows

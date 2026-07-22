@@ -6,10 +6,11 @@
 
 | Где вы пишете | Что устанавливать | Сколько действий |
 |---|---|---|
-| Claude в браузере | ZIP через `Customize > Skills` | Скачать и загрузить |
-| Claude Desktop | Тот же ZIP через `Customize > Skills` | Скачать и загрузить |
+| Claude в браузере | **[Скачать ZIP](https://github.com/fsbtactic-code/pishi-normalno/releases/download/v1.0.0/pishi-normalno.zip)** и открыть `Customize > Skills` | Два действия |
+| Claude Desktop | **[Скачать ZIP](https://github.com/fsbtactic-code/pishi-normalno/releases/download/v1.0.0/pishi-normalno.zip)** и открыть `Customize > Skills` | Два действия |
 | Claude Code в терминале | Папку в `~/.claude/skills` | Одна команда |
-| ChatGPT | ZIP в Workspace Agent или один MD в обычный Project | Скачать и загрузить |
+| ChatGPT с Workspace Agents | **[Скачать ZIP](https://github.com/fsbtactic-code/pishi-normalno/releases/download/v1.0.0/pishi-normalno.zip)** и открыть `Add skill` | Два действия |
+| Обычный ChatGPT | **[Скачать MD](https://github.com/fsbtactic-code/pishi-normalno/releases/download/v1.0.0/pishi-normalno-chatgpt.md)** и добавить в Project | Два действия |
 | Codex app, CLI или IDE | Папку в `~/.agents/skills` | Одна команда |
 
 ## Claude в браузере
@@ -22,7 +23,7 @@
 4. Включите `Code execution and file creation`.
 5. Откройте `Customize > Skills`.
 6. Нажмите `+`, затем `Create skill` и `Upload a skill`.
-7. Выберите скачанный `pishi-normalno.zip`.
+7. Выберите [скачанный `pishi-normalno.zip`](https://github.com/fsbtactic-code/pishi-normalno/releases/download/v1.0.0/pishi-normalno.zip).
 8. Убедитесь, что переключатель скилла включен.
 
 Готово. Команду с названием скилла писать не нужно. Попросите Claude написать пост, письмо или текст лендинга обычными словами.
@@ -39,7 +40,7 @@
 2. Откройте Claude Desktop.
 3. Откройте `Customize > Skills`.
 4. Нажмите `+`, затем `Create skill` и `Upload a skill`.
-5. Выберите ZIP и включите скилл.
+5. Выберите [скачанный ZIP](https://github.com/fsbtactic-code/pishi-normalno/releases/download/v1.0.0/pishi-normalno.zip) и включите скилл.
 
 Локальную папку искать не нужно. Загруженный скилл хранится в вашем аккаунте Claude и доступен в обычном Chat и Cowork. Для Team и Enterprise администратор может загрузить его сразу всей организации.
 
@@ -96,7 +97,7 @@ test -f ~/.claude/skills/pishi-normalno/SKILL.md && echo "Готово"
 2. Откройте `Agents` в ChatGPT.
 3. Создайте нового агента или откройте существующего.
 4. Нажмите `Add skill`.
-5. Выберите скачанный ZIP.
+5. Выберите [скачанный ZIP](https://github.com/fsbtactic-code/pishi-normalno/releases/download/v1.0.0/pishi-normalno.zip).
 6. Сохраните агента и откройте `Try in ChatGPT`.
 
 Внутри этого агента скилл будет подключаться по смыслу запроса. Официальный пример: [Building workspace agents in ChatGPT](https://developers.openai.com/cookbook/articles/chatgpt-agents-sales-meeting-prep#3-enabling-skills-and-memories-for-consistent-customized-outputs).

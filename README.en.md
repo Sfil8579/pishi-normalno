@@ -6,6 +6,8 @@
 
 `pishi-normalno` is a Russian-first writing and editing skill for AI agents. It preserves facts, semantic relations, uncertainty, and author voice while removing synthetic phrasing, bureaucratic language, calques, broken sentence fragments, decorative Unicode, and formulaic marketing copy.
 
+**[Download the ready-to-upload skill ZIP](https://github.com/fsbtactic-code/pishi-normalno/releases/download/v1.0.0/pishi-normalno.zip)**
+
 It does not add mistakes, slang, metaphors, or random sentence variation to imitate a person. It does not promise to bypass AI detectors. Its target is strong Russian prose.
 
 ## The difference in one example
